@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "47a5fcb0-8b31-4dd2-bbe7-8f2baa5e8807",
+		"name": "Vertilogic Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/v1/order/list-order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/order/list-order",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order",
+						"list-order"
+					]
+				},
+				"description": "# Daftar Pesanan Makanan"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/tags?tag[]=2&tag[]=7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/tags?tag[]=2&tag[]=7",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"tags"
+					],
+					"query": [
+						{
+							"key": "tag[]",
+							"value": "2"
+						},
+						{
+							"key": "tag[]",
+							"value": "7"
+						}
+					]
+				},
+				"description": "# Daftar Restoran (Vendor) berdasarkan Tag atau Hidangan"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/order/special-order?order=30",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "catatan",
+							"value": "Pedas",
+							"type": "text"
+						},
+						{
+							"key": "special_qty",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/order/special-order?order=30",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order",
+						"special-order"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "30"
+						}
+					]
+				},
+				"description": "# Special Request dari pesanan"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/order/order?dish[]=6&vendor[]=27",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name_customer",
+							"value": "Ahmad Shobirin",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "3",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/order/order?dish[]=6&vendor[]=27",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order",
+						"order"
+					],
+					"query": [
+						{
+							"key": "dish[]",
+							"value": "6"
+						},
+						{
+							"key": "vendor[]",
+							"value": "27"
+						}
+					]
+				},
+				"description": "# Melakukan Pesanan"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/vendors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Rumah Makan Gembira",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/vendors",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"vendors"
+					]
+				},
+				"description": "# Tambah Restoran atau Vendor"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/vendors/51",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rumah Makan Aja",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/vendors/51",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"vendors",
+						"51"
+					]
+				},
+				"description": "# Update Restoran"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/vendors/51",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/v1/vendors/51",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"vendors",
+						"51"
+					]
+				},
+				"description": "# Delete Restoran atau Vendor"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

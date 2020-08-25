@@ -1,0 +1,22 @@
+Fungsi VendorController: 
+Store	: 5.55 menit
+Show	: 3.25 menit
+Update 	: 1.05 Menit
+Delete 	: 2.38 Menit
+Get Restoran Berdasarkan Hidangan dengan Menggunakan Query String Filtering : 3.30 Menit
+
+Pembuatan Model Order : 1.25 Menit
+Pembuatan Model Special Order : 2 Menit
+Pembuatan Migration Order : 2.21 Menit
+Pembuatan Migration Special Request : 2 Menit
+Pembuatan Resource Order : 3.03 Menit
+Pembuatan OrderController : 25 Detik
+Pembuatan Resource Special Request : 3 Menit
+Pembuatan SpecialRequestController : 35 Detik
+
+Fungsi Order Controller:
+
+Order (Berdasarkan Menu dan Restoran yang akan di pesan) : 15.11 Menit
+Special Order (Special Request pemesanan) : 25.09 Menit
+ListOrder (Semua daftar Orderan) : 5.07 Menit
+ListDishes (Menampilkan data berdasarkan Hidangan dan Restoran) : 1.20 Menit
